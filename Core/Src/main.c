@@ -729,7 +729,7 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
-  delay_ms(50);
+
   OLED_Init();
   HAL_UARTEx_ReceiveToIdle_DMA(&huart1, (uint8_t *)BUFF, 128);   //k230
  // __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
